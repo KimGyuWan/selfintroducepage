@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+#portfolio {
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+
+  h2 + i {
+    font-size: 3rem;
+  }
+
+  .slide1 {
+    background-color: rgb(4, 6, 89);
+  }
+
+  .slide2 {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .slide3 {
+    background-color: rgb(155, 171, 186);
+  }
+
+  .swiper-slide {
+    box-sizing: border-box;
+    width: 320px !important;
+    height: 600px !important;
+    margin-right: 1rem;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    .imgbox {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+      transition: 0.5s;
+    }
+
+    .textbox {
+      width: 320px;
+      height: 300px;
+      padding: 1rem;
+      color: white;
+
+      h3 {
+        margin-bottom: 6rem;
+      }
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .swiper-button-prev::after {
+    content: "\F12F";
+    font-family: bootstrap-icons !important;
+    color: white;
+    opacity: 1 !important;
+    font-size: 2rem;
+  }
+
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+  }
+
+  .swiper-button-next::after {
+    content: "\F138";
+    font-family: bootstrap-icons !important;
+    color: white;
+    opacity: 1 !important;
+    font-size: 2rem;
+  }
+}
+
+#interview {
+  .bi-arrow-right {
+    font-size: 3rem;
+  }
+  dl {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .quest {
+    font-size: 1.2rem;
+    transition: 0.5s;
+
+    &:hover {
+      color: rgb(255, 95, 0);
+    }
+
+    &.act + .answer {
+      max-height: 300px;
+      transition: 0.5s;
+    }
+  }
+
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
+footer {
+  @media (min-width: 991px) {
+    margin-top: 150px;
+  }
+  h2 {
+    font-size: 5em;
+    font-weight: 400;
+  }
+
+  a {
+    color: white;
+    background-color: black;
+    padding: 0.5rem 0.6rem;
+    border-radius: 50%;
+    &:hover {
+      color: white;
+      opacity: 0.7;
+    }
+  }
+}
