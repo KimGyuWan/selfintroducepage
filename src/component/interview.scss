@@ -1,0 +1,27 @@
+#interview {
+  .bi-arrow-right {
+    font-size: 3rem;
+  }
+  dl {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .quest {
+    font-size: 1.2rem;
+    transition: 0.5s;
+
+    &:hover {
+      color: rgb(255, 95, 0);
+    }
+
+    &.act + .answer {
+      max-height: 300px;
+      transition: 0.5s;
+    }
+  }
+
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
